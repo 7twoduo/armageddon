@@ -11,7 +11,18 @@ The build still fails correctly based on run_all_gates.sh exit code.
 
 A) Combined failure roll-up into gate_result.json
 
-rollup_gates.sh (jq required)
+rollup_gates.sh (jq required) : https://github.com/BalericaAI/armageddon/blob/main/SEIR_Foundations/jenkins/puython/rollup_gates.sh
+
+How to use
+
+        ./run_all_gates.sh
+        ./rollup_gates.sh
+        cat gate_result.json | jq '.rollup.failures'
+
+B) Small jq-based summarizer (clean output)
+
+summarize_gates.sh  
+
 
 
 
