@@ -1,0 +1,11 @@
+Add a stage after running gates:
+
+    ./run_all_gates.sh
+    ./rollup_gates.sh
+    ./summarize_gates.sh || true
+    cat pr_comment.md
+
+summarize_gates.sh || true means: even if jq isn’t installed, the build doesn’t crash.
+The build still fails correctly based on run_all_gates.sh exit code.
+
+
