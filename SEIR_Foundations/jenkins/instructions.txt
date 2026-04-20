@@ -9,3 +9,9 @@ summarize_gates.sh || true means: even if jq isnâ€™t installed, the build doesnâ
 The build still fails correctly based on run_all_gates.sh exit code.
 
 
+A) Combined failure roll-up into gate_result.json
+
+rollup_gates.sh (jq required)
+
+
+
